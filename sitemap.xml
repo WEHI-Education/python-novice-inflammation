@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://swcarpentry.github.io/python-novice-inflammation/00-python.html</loc>
+  </url>
+  <url>
     <loc>https://swcarpentry.github.io/python-novice-inflammation/01-intro.html</loc>
   </url>
   <url>
@@ -62,6 +65,9 @@
   </url>
   <url>
     <loc>https://swcarpentry.github.io/python-novice-inflammation/index.html</loc>
+  </url>
+  <url>
+    <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/00-python.html</loc>
   </url>
   <url>
     <loc>https://swcarpentry.github.io/python-novice-inflammation/instructor/01-intro.html</loc>
