@@ -51,6 +51,7 @@ Steps:
 - Dynamically typed
 
 Other programming languages you may have heard of:
+
 - [Java](https://en.wikipedia.org/wiki/Java_(programming_language))
 - [C](https://en.wikipedia.org/wiki/C_(programming_language)) or [C++](https://en.wikipedia.org/wiki/C++)
 - [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language))
@@ -114,8 +115,18 @@ hello from my-script.py
 
 ### Example script
 
-See the [intro-script.py](./files/code/intro-script.py) file as an example script.
+See the [intro-script.py](https://github.com/WEHI-Education/python-novice-inflammation/blob/main/episodes/files/code/intro-script.py) ([download link](./files/code/intro-script.py)) file as an example script.
 In this workshop, we will work towards understanding how elements of this script works and how to write your own similar scripts.
+
+```bash
+python ~/intro-script.py --figure ~/swc-python/data/inflammation-02.csv
+```
+
+```output
+loading data...
+writing figure to output.png ...
+done!
+```
 
 
 ## Running Python from notebooks
@@ -126,5 +137,6 @@ They let your code to be separated into sections called "cells" that can be exec
 You can mix code and text with different cell types: code and markdown.
 
 Examples of notebooks are:
+
 - [Jupyter](https://jupyter.org/)
 - [Google Colab](https://colab.research.google.com/)
