@@ -188,12 +188,8 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#overview">Overview</a></li>
-<li><a href="#install-python">Install Python</a></li>
-<li><a href="#obtain-lesson-materials">Obtain lesson materials</a></li>
-<li><a href="#launch-python-interface">Launch Python interface</a></li>
-<li><a href="#option-a-jupyter-notebook">Option A: Jupyter Notebook</a></li>
-<li><a href="#option-b-ipython-interpreter">Option B: IPython interpreter</a></li>
-<li><a href="#option-c-plain-vanilla-python-interpreter">Option C: plain-vanilla Python interpreter</a></li>
+<li><a href="#google-colabs">Google Colabs</a></li>
+<li><a href="#set-up-your-own-laptop">Set up your own laptop</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -436,8 +432,18 @@ interpreter.</p>
 <hr class="half-width"><p>This lesson is designed to be run on a personal computer. All of the
 software and data used in this lesson are freely available online, and
 instructions on how to obtain them are provided below.</p>
-</section><section><h2 class="section-heading" id="install-python">Install Python<a class="anchor" aria-label="anchor" href="#install-python"></a></h2>
-<hr class="half-width"><p>In this lesson, we will be using Python 3 with some of its most
+<p>There are two main ways to set up python for this workshop:</p>
+<ul><li>A premade Google Colab worksheet (easiest!)</li>
+<li>Your own laptop</li>
+</ul></section><section><h2 class="section-heading" id="google-colabs">Google Colabs<a class="anchor" aria-label="anchor" href="#google-colabs"></a></h2>
+<hr class="half-width"><p>We have prepared a worksheet with all the required software. This
+means you don’t need to install anything on your laptop. All your code
+runs on a computer in the ‘cloud’.</p>
+<p>See this link to access the Colab worksheet: <a href="https://colab.research.google.com/drive/1K9Z6h_uri8L1gw1F4tLY49s0AWRaHse5?usp=sharing" class="external-link uri">https://colab.research.google.com/drive/1K9Z6h_uri8L1gw1F4tLY49s0AWRaHse5?usp=sharing</a></p>
+</section><section><h2 class="section-heading" id="set-up-your-own-laptop">Set up your own laptop<a class="anchor" aria-label="anchor" href="#set-up-your-own-laptop"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="install-python">Install Python<a class="anchor" aria-label="anchor" href="#install-python"></a></h3>
+<p>In this lesson, we will be using Python 3 with some of its most
 popular scientific libraries. One can install a plain-vanilla Python and
 all required libraries by hand. If you’ve followed the <a href="https://carpentries.github.io/workshop-template/install_instructions/#python-1" class="external-link">Carpentry
 workshop installation instructions</a> you will have installed miniforge
@@ -445,8 +451,10 @@ and the required libraries in an environment called
 <code>carpentries</code>. Before starting you’ll want to type
 <code>conda activate carpentries</code> in order to activate that
 environment.</p>
-</section><section><h2 class="section-heading" id="obtain-lesson-materials">Obtain lesson materials<a class="anchor" aria-label="anchor" href="#obtain-lesson-materials"></a></h2>
-<hr class="half-width"><ol style="list-style-type: decimal"><li>Download <a href="data/python-novice-inflammation-data.zip">python-novice-inflammation-data.zip</a>
+</div>
+<div class="section level3">
+<h3 id="obtain-lesson-materials">Obtain lesson materials<a class="anchor" aria-label="anchor" href="#obtain-lesson-materials"></a></h3>
+<ol style="list-style-type: decimal"><li>Download <a href="data/python-novice-inflammation-data.zip">python-novice-inflammation-data.zip</a>
 and <a href="files/code/python-novice-inflammation-code.zip">python-novice-inflammation-code.zip</a>.</li>
 <li>Create a folder called <code>swc-python</code> on your Desktop.</li>
 <li>Move downloaded files to <code>swc-python</code>.</li>
@@ -454,14 +462,18 @@ and <a href="files/code/python-novice-inflammation-code.zip">python-novice-infla
 </ol><p>You should see two folders called <code>data</code> and
 <code>code</code> in the <code>swc-python</code> directory on your
 Desktop.</p>
-</section><section><h2 class="section-heading" id="launch-python-interface">Launch Python interface<a class="anchor" aria-label="anchor" href="#launch-python-interface"></a></h2>
-<hr class="half-width"><p>To start working with Python, we need to launch a program that will
+</div>
+<div class="section level3">
+<h3 id="launch-python-interface">Launch Python interface<a class="anchor" aria-label="anchor" href="#launch-python-interface"></a></h3>
+<p>To start working with Python, we need to launch a program that will
 interpret and execute our Python commands. Below we list several
 options. If you don’t have a preference, proceed with the top option in
 the list that is available on your machine. Otherwise, you may use any
 interface you like.</p>
-</section><section><h2 class="section-heading" id="option-a-jupyter-notebook">Option A: Jupyter Notebook<a class="anchor" aria-label="anchor" href="#option-a-jupyter-notebook"></a></h2>
-<hr class="half-width"><p>A Jupyter Notebook provides a browser-based interface for working
+</div>
+<div class="section level3">
+<h3 id="option-a-jupyter-notebook">Option A: Jupyter Notebook<a class="anchor" aria-label="anchor" href="#option-a-jupyter-notebook"></a></h3>
+<p>A Jupyter Notebook provides a browser-based interface for working
 with Python. You can launch a notebook from the command line:</p>
 <div id="accordionSpoiler5" class="accordion spoiler-accordion accordion-flush">
 <div class="accordion-item">
@@ -558,21 +570,26 @@ and selecting “Python 3” from the drop-down menu: <img src="fig/jupyter-note
 </div>
 </div>
 <p>  <!-- vertical spacer --></p>
-</section><section><h2 class="section-heading" id="option-b-ipython-interpreter">Option B: IPython interpreter<a class="anchor" aria-label="anchor" href="#option-b-ipython-interpreter"></a></h2>
-<hr class="half-width"><p>IPython is an alternative solution situated somewhere in between the
+</div>
+<div class="section level3">
+<h3 id="option-b-ipython-interpreter">Option B: IPython interpreter<a class="anchor" aria-label="anchor" href="#option-b-ipython-interpreter"></a></h3>
+<p>IPython is an alternative solution situated somewhere in between the
 plain-vanilla Python interpreter and Jupyter Notebook. It provides an
 interactive command-line based interpreter with various convenience
 features and commands. You can install IPython on your system <a href="https://ipython.org/install.html" class="external-link">system</a>.</p>
 <p>To start using IPython, execute:</p>
 <pre class="source"><code><span><span class="va">ipython</span></span></code></pre>
 <p>  <!-- vertical spacer --></p>
-</section><section><h2 class="section-heading" id="option-c-plain-vanilla-python-interpreter">Option C: plain-vanilla Python interpreter<a class="anchor" aria-label="anchor" href="#option-c-plain-vanilla-python-interpreter"></a></h2>
-<hr class="half-width"><p>To launch a plain-vanilla Python interpreter, execute:</p>
+</div>
+<div class="section level3">
+<h3 id="option-c-plain-vanilla-python-interpreter">Option C: plain-vanilla Python interpreter<a class="anchor" aria-label="anchor" href="#option-c-plain-vanilla-python-interpreter"></a></h3>
+<p>To launch a plain-vanilla Python interpreter, execute:</p>
 <pre class="source"><code><span><span class="va">python</span></span></code></pre>
 <p>If you are using <a href="https://gitforwindows.org" class="external-link">Git Bash on
 Windows</a>, you have to call Python <em>via</em>
 <code>winpty</code>:</p>
 <pre class="source"><code>winpty python</code></pre>
+</div>
 </section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="00-python.html" rel="next">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>

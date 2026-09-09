@@ -199,7 +199,10 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#running-python">Running Python</a></li>
+        <ul><li><a href="#what-is-a-programming-language">What is a programming language?</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#running-python-in-the-cli">Running Python in the CLI</a></li>
+<li><a href="#running-python-from-notebooks">Running Python from notebooks</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -401,37 +404,119 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul><li>Understand what Python is</li>
-<li>Understand a few ways of running python</li>
+<li>Understand basic ways to run python</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="running-python">Running Python<a class="anchor" aria-label="anchor" href="#running-python"></a></h2>
-<hr class="half-width"><div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
+<section><h2 class="section-heading" id="what-is-a-programming-language">What is a programming language?<a class="anchor" aria-label="anchor" href="#what-is-a-programming-language"></a></h2>
+<hr class="half-width"><p>Simply: A programming language is a way for humans to tell a computer
+what to do.</p>
+<p>Usually it is a set of instructions a human gives a computer to carry
+out.</p>
+<ul><li>A program is just text that computers can understand</li>
+<li>The order of instructions is important</li>
+</ul><p>An analogy would be a recipe:</p>
+<pre><code>Program: Bake a cake
+
+Take:
+- 1 cup flour
+- 1 cup sugar
+- 2 eggs
+- 1/2 cup milk
+
+Steps:
+1. Combine flour and sugar
+2. Mix with eggs and milk until smooth
+3. Pour into cake pan
+4. Bake for 30 minutes at 180 degrees.</code></pre>
+</section><section><h2 class="section-heading" id="python">Python<a class="anchor" aria-label="anchor" href="#python"></a></h2>
+<hr class="half-width"><ul><li>Interpreted language</li>
+<li>Dynamically typed</li>
+</ul><p>Other programming languages you may have heard of: - <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" class="external-link">Java</a>
+- <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="external-link">C</a>
+or <a href="https://en.wikipedia.org/wiki/C++" class="external-link">C++</a> - <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)" class="external-link">Rust</a>
+- <a href="https://en.wikipedia.org/wiki/R_(programming_language)" class="external-link">R</a>
+- <a href="https://en.wikipedia.org/wiki/JavaScript" class="external-link">JavaScript</a></p>
+</section><section><h2 class="section-heading" id="running-python-in-the-cli">Running Python in the CLI<a class="anchor" aria-label="anchor" href="#running-python-in-the-cli"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="interactively">Interactively<a class="anchor" aria-label="anchor" href="#interactively"></a></h3>
+<p>You can run python in what is called Read–Eval–Print Loop (REPL). It
+allows you to run Python code line by line and receive instant
+feedback.</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="ex">python</span></span></code></pre>
 </div>
-<span class="callout-header">Key Points</span>
-<div class="callout-inner">
-<div class="callout-content">
-<ul><li>Basic data types in Python include integers, strings, and
-floating-point numbers.</li>
-<li>Use <code>variable = value</code> to assign a value to a variable in
-order to record it in memory.</li>
-<li>Variables are created on demand whenever a value is assigned to
-them.</li>
-<li>Use <code>print(something)</code> to display the value of
-<code>something</code>.</li>
-<li>Use <code># some kind of explanation</code> to add comments to
-programs.</li>
-<li>Built-in functions are always available to use.</li>
-<li>Use <code>help(thing)</code> to view help for something.</li>
-<li>Error messages provide information about what has gone wrong with
-your program and where.</li>
-</ul></div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Python 3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 17.0.0 (clang-1700.0.13.3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; x = 5
+&gt;&gt;&gt; y = 12
+&gt;&gt;&gt; x * y
+60</code></pre>
+</div>
+<p>Type <code>exit()</code> to exit the REPL and return to your regular
+shell.</p>
+</div>
+<div class="section level3">
+<h3 id="with-a-command">With a command<a class="anchor" aria-label="anchor" href="#with-a-command"></a></h3>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="ex">python</span> <span class="at">-c</span> <span class="st">"print('hello there')"</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>hello there</code></pre>
+</div>
+<p>The <code>-c</code> option tells python to look at the following text
+and treat it as a program. In this case the program to run is:
+<code>print('hello there')</code>.</p>
+</div>
+<div class="section level3">
+<h3 id="from-a-script">From a script<a class="anchor" aria-label="anchor" href="#from-a-script"></a></h3>
+<p>We can also create file to store our program. This is called a
+script, and allows us to write many</p>
+<p>For example a file name <code>my-script.py</code> containing the
+text:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="co"># my-script.py</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1" aria-label="code-block-6-2"></a><span class="bu">print</span>(<span class="st">'hello from my-script.py'</span>)</span></code></pre>
+</div>
+<p>Can be run with the following command:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="ex">python</span> my-script.py</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>hello from my-script.py</code></pre>
 </div>
 </div>
+<div class="section level3">
+<h3 id="example-script">Example script<a class="anchor" aria-label="anchor" href="#example-script"></a></h3>
+<p>See the <a href="./files/code/intro-script.py">intro-script.py</a>
+file as an example script. In this workshop, we will work towards
+understanding how elements of this script works and how to write your
+own similar scripts.</p>
+</div>
+</section><section><h2 class="section-heading" id="running-python-from-notebooks">Running Python from notebooks<a class="anchor" aria-label="anchor" href="#running-python-from-notebooks"></a></h2>
+<hr class="half-width"><p>Notebooks are a way run python code in an interactive and graphical
+way. They let your code to be separated into sections called “cells”
+that can be executed independent of one another.</p>
+<p>You can mix code and text with different cell types: code and
+markdown.</p>
+<p>Examples of notebooks are: - <a href="https://jupyter.org/" class="external-link">Jupyter</a> - <a href="https://colab.research.google.com/" class="external-link">Google Colab</a></p>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
