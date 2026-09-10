@@ -1,31 +1,37 @@
+# Second iteration of the intro-script using the 'typer' package.
+# You will need to install typer into your environment:
+#    `conda activate carpentries`
+#    `pip install typer`
+#     OR `conda install typer`
 # The script can be run with the command:
-#     `python intro-script.py --figure swc-python/data/inflammation-02.csv`
+#     `python intro-script-typer.py --figure swc-python/data/inflammation-02.csv`
 
-import sys
+from pathlib import Path
+from typing import Annotated
 
 import matplotlib.pyplot
 import numpy
+import typer
 from matplotlib.figure import Figure
 from numpy import ndarray
 
 
-def main():
-  output_type = sys.argv[1]
-  input_csv = sys.argv[2]
-
+def main(
+    is_figure: Annotated[bool, typer.Option("--figure/--stats")],
+    input_csv: Annotated[Path, typer.Argument()],
+):
   print("loading data...")
   data = numpy.loadtxt(input_csv, delimiter=',')
 
-  if output_type == "--figure":
+  if is_figure:
     figure = make_figure(data)
     print("writing figure to output.png ...")
     figure.savefig("output.png")
-  elif output_type == "--stats":
+  else:
     stats = make_stats(data)
     print("writing stats to output.csv ...")
     numpy.savetxt("output.csv", stats, header="mean,max,min", delimiter=",")
-  else:
-    raise ValueError(f"Unsupported output type: {output_type}")
+
   print("done!")
 
 
@@ -55,4 +61,5 @@ def make_stats(data: ndarray) -> ndarray:
     numpy.min(data, axis=0)
   ])
 
-main()
+if __name__ == "__main__":
+  typer.run(main)
